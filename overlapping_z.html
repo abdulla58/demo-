@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .grid-container{
+
+
+            display: block;
+            
+            width: 600px;
+            height: 300px;
+            border: 2px solid black;
+            place-items: center;
+            background-color: rgb(240, 235, 235);
+            
+            
+            
+
+        }
+
+        
+        .card1{
+
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            top: 50px;
+            left: 90px;
+            border-radius: 10px;
+            background-color: crimson;
+            z-index: 1;
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            
+            
+        }
+
+        .card2{
+
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            top: 90px;
+            left: 130px;
+            border-radius: 10px;
+            background-color: royalblue;
+            z-index: 2;
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+
+        }
+
+        .card3{
+
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            top: 130px;
+            left: 170px;
+            border-radius: 10px;
+            background-color: seagreen;
+            z-index: 3;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+
+
+        }
+
+         .card:hover{
+
+            transform:scale(1.1,1.1);
+            cursor:pointer;
+
+
+         } 
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="grid-container">
+
+    <div class="card card1">Card 1</div>
+    <div class="card card2">Card 2</div>
+    <div class="card card3">Card 3</div>
+
+    </div>
+
+
+    
+</body>
+</html>

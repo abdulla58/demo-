@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Grid Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Grid System */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+      grid-template-rows: repeat(3, 100px);  /* 3 equal rows */
+      gap: 20px; /* space between items */
+      width: 360px; /* adjust width of gallery */
+    }
+
+    .grid-item {
+      background: #4CAF50;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      display: grid; /* center content with grid */
+      place-items: center; /* shorthand for align + justify */
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      
+    }
+
+    .grid-item:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Grid Gallery</h2>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+</body>
+</html>
+

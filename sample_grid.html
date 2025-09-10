@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+
+
+         body{
+
+            display: grid;
+            justify-content: center;
+
+        }
+
+        .grid-container{
+
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(3,150px);
+            /* grid-template-rows: repeat(3,200px); */
+            gap: 30px;
+            justify-content: center;
+            align-self: center;
+            width: 800px;
+            
+        }
+        
+        .item{
+
+            background-color: green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+            font-size: larger;
+            font-weight: bolder;
+
+        }
+
+
+        .item:hover {
+
+         transform: scale(1.1);
+         cursor: pointer;
+         background-color: darkgreen;
+     
+        }
+
+        
+      </style>
+
+
+
+</head>
+<body>
+
+    <div class="h2" align="center" style="padding: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">Simple Grid Gallery </div>
+
+    <div class="grid-container" style="background-color: aliceblue;">
+
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
+       <div class="item">6</div>
+       <div class="item">7</div>
+       <div class="item">8</div>
+       <div class="item">9</div>
+
+    </div>
+
+
+</body>
+</html>
